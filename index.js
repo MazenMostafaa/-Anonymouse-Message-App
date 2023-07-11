@@ -5,12 +5,13 @@ import postRouter from './Modules/postModule/post.route.js'
 
 import { connectDB } from "./DB/connection.js";
 
+import cors from 'cors';
+
 const app = express();
 const port = 3000
 connectDB()
 
-
-
+app.use(cors())
 app.use(express.json())
 
 app.get('/', (req, res) => {
