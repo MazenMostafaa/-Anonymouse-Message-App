@@ -1,4 +1,4 @@
-##  user APIs
+# user APIs
     1-sign up ( email must be unique ) 
     2-sign in 
     3-update user
@@ -8,7 +8,7 @@
     7-get all user 
     8- get user profile with user posts(using populate)
 
-##  Post APIs
+#  Post APIs
 1- add post (make sure that user already exists)
 2- delete post (post creator only )
 3- update post (post owner only)
