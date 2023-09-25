@@ -1,8 +1,39 @@
-# Post Management App
-#### Description about the project:
 
-##### 1-The app allows users to register , each user has full ability on his/her posts.
-##### 2- There are two types of modules one for user and another for post
-##### 3- Ability to do CRUD operations on all modules , and also support API features such as(sort, select ,filter,search) .
+# Assignment-1
 
-#### must download node_modules to start the server: npm i
+here, I will show you the requirement of an **assignment 1!**
+
+## specifications 
+
+> using mongoose and express
+
+ - users collection -->schema [ firstName ,lastName, userName,  email , password , age , gander , phone ,posts] 
+ - posts collection -->schema [ title , content , userID => must be related to the user collection ] 
+
+
+## Modules
+
+> User APIs :
+
+ 1. sign up ( email must be unique ) 
+ 2. sign in
+ 3. update user
+ 4. delete user
+ 5. search for user where his name starts with "X" and age less than Y=>   (X, Y => variables)
+ 6. search for user where his age is between X and Y
+ 7. get all user 
+ 8. get user profile with user posts(using populate)
+
+
+> Post  APIs : 
+ 1. add post (make sure that user already exists)
+ 2. delete post (post creator only )
+ 3. update post (post owner only)
+ 4. get all posts
+ 5. get all posts with their owners information (using populate)
+ 6. sort posts descending (By date)
+
+ 
+## Additional requirement
+
+ - deploy on vercel
